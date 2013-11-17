@@ -3,3 +3,5 @@
 
 299.222.222.222 not a valid IP
 this is what www.microsoft.com resolves to: 64.4.11.42
+
+8.8.8.8 8.8.4.4
