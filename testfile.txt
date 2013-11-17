@@ -1,0 +1,5 @@
+8.8.8.8 google dns server #1
+8.8.4.4 google dns server #2
+
+299.222.222.222 not a valid IP
+this is what www.microsoft.com resolves to: 64.4.11.42
