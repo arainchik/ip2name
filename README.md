@@ -5,7 +5,8 @@ A script to convert all IPs in a text file to resolved hostnames
 
 Here is an example:
 
-```$ python ip2name.py < testfile.txt
+```
+$ python ip2name.py < testfile.txt
 [google-public-dns-a.google.com] google dns server #1
 [google-public-dns-b.google.com] google dns server #2
 

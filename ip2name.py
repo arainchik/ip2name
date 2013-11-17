@@ -4,7 +4,7 @@ import re
 import fileinput
 import socket
 
-_dnscache = {}
+_dnscache = {'127.0.0.1':'localhost'}
 
 def resolve(m):
     ip = m.group(0)
