@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import re
 import fileinput
@@ -13,7 +13,7 @@ def resolve(m):
 
     try:
         name = socket.gethostbyaddr(ip)[0]
-    except socket.herror, socket.timeout:
+    except (socket.herror, socket.timeout):
         name = ip
     _dnscache[ip] = name
     return '[%s]' % name
@@ -26,4 +26,4 @@ ipregex = re.compile(
 
 if __name__ == "__main__":
     for line in fileinput.input():
-        print re.sub(ipregex, resolve, line),
+        print(re.sub(ipregex, resolve, line), end='')

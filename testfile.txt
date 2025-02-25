@@ -2,6 +2,7 @@
 8.8.4.4 google dns server #2
 
 299.222.222.222 not a valid IP
-this is what www.microsoft.com resolves to: 64.4.11.42
+this is what www.microsoft.com used to be: 64.4.11.42
+this is what www.microsoft.com is now: 23.214.173.122
 
 8.8.8.8 8.8.4.4
