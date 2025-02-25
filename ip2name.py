@@ -6,6 +6,9 @@ import socket
 
 _dnscache = {'127.0.0.1':'localhost'}
 
+ipregex = re.compile(
+        r'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b')
+
 def resolve(m):
     ip = m.group(0)
     if ip in _dnscache:
@@ -17,12 +20,6 @@ def resolve(m):
         name = ip
     _dnscache[ip] = name
     return '[%s]' % name
-
-
-ipregex = re.compile(
-        r'\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b'
-          )
-
 
 if __name__ == "__main__":
     for line in fileinput.input():
